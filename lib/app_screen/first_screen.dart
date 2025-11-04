@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 import './second_screen.dart';
 import './third_screen.dart';
+import 'package:english_words/english_words.dart';
   
 // ส่วนของ Stateful widget
 class FirstScreen extends StatefulWidget{
@@ -32,7 +32,7 @@ class _FirstScreen extends State<FirstScreen>{
     void _loadRamdomWord(){
         setState(() {
             _randomWord.addAll(generateWordPairs().take(15));
-            });
+        });
     }
    
     Future<void> _loadMoreRandomWord() {
